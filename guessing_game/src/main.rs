@@ -21,8 +21,8 @@ fn main() {
         println!("你猜测的数是：{}", guess);
 
         match guess.cmp(&secret_number) {
-            Ordering::Less => println!("太小！"),
-            Ordering::Greater => println!("太大！"),
+            Ordering::Less => println!("Too Small, 太小！"),
+            Ordering::Greater => println!("Too Big, 太大！"),
             Ordering::Equal => {
                 println!("Bingo!");
                 break;
